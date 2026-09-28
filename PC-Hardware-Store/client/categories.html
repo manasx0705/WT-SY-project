@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - PC Hardware Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">PC Hardware Store</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button onclick="searchProducts()">Search</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="login.html" id="account-link">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Shop by Category</h2>
+        <br>
+        <div class="category-list">
+            <a href="products.html?category=CPU" class="category-card">CPU</a>
+            <a href="products.html?category=GPU" class="category-card">GPU</a>
+            <a href="products.html?category=RAM" class="category-card">RAM</a>
+            <a href="products.html?category=SSD" class="category-card">SSD</a>
+            <a href="products.html?category=HDD" class="category-card">HDD</a>
+            <a href="products.html?category=Motherboard" class="category-card">Motherboard</a>
+            <a href="products.html?category=PSU" class="category-card">PSU</a>
+            <a href="products.html?category=PC Case" class="category-card">PC Case</a>
+            <a href="products.html?category=Monitor" class="category-card">Monitor</a>
+            <a href="products.html?category=Keyboard" class="category-card">Keyboard</a>
+            <a href="products.html?category=Mouse" class="category-card">Mouse</a>
+            <a href="products.html?category=Headphones" class="category-card">Headphones</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 PC Hardware Store. A college project.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

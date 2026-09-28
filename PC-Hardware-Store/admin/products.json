@@ -1,0 +1,19 @@
+[
+    {"id": 1, "name": "AMD Ryzen 5 7600", "category": "CPU", "price": 18999, "description": "6-core, 12-thread desktop processor.", "image": "https://placehold.co/200x200/eee/31343C?text=CPU"},
+    {"id": 2, "name": "Intel Core i5-13400F", "category": "CPU", "price": 17500, "description": "10-core, 16-thread desktop processor.", "image": "https://placehold.co/200x200/eee/31343C?text=CPU"},
+    {"id": 3, "name": "NVIDIA RTX 4060", "category": "GPU", "price": 28999, "description": "8GB GDDR6 Graphics Card.", "image": "https://placehold.co/200x200/eee/31343C?text=GPU"},
+    {"id": 4, "name": "AMD Radeon RX 7600", "category": "GPU", "price": 25499, "description": "8GB GDDR6 Graphics Card for 1080p gaming.", "image": "https://placehold.co/200x200/eee/31343C?text=GPU"},
+    {"id": 5, "name": "Corsair Vengeance 16GB DDR5", "category": "RAM", "price": 4999, "description": "16GB (1x16GB) DDR5 5200MHz Memory.", "image": "https://placehold.co/200x200/eee/31343C?text=RAM"},
+    {"id": 6, "name": "Crucial RAM 8GB DDR4", "category": "RAM", "price": 1800, "description": "8GB DDR4 3200MHz Desktop Memory.", "image": "https://placehold.co/200x200/eee/31343C?text=RAM"},
+    {"id": 7, "name": "Samsung 980 PRO 1TB", "category": "SSD", "price": 8499, "description": "PCIe NVMe Gen4 M.2 Internal Solid State Drive.", "image": "https://placehold.co/200x200/eee/31343C?text=SSD"},
+    {"id": 8, "name": "WD Blue 1TB SATA SSD", "category": "SSD", "price": 5200, "description": "2.5 inch SATA Internal Solid State Drive.", "image": "https://placehold.co/200x200/eee/31343C?text=SSD"},
+    {"id": 9, "name": "Seagate Barracuda 2TB", "category": "HDD", "price": 4500, "description": "2TB 7200 RPM 3.5 inch HDD.", "image": "https://placehold.co/200x200/eee/31343C?text=HDD"},
+    {"id": 10, "name": "MSI B650M-A WIFI", "category": "Motherboard", "price": 14500, "description": "Micro-ATX AM5 Motherboard with Wi-Fi.", "image": "https://placehold.co/200x200/eee/31343C?text=Motherboard"},
+    {"id": 11, "name": "Gigabyte B760M DS3H", "category": "Motherboard", "price": 12000, "description": "Micro-ATX LGA 1700 Motherboard.", "image": "https://placehold.co/200x200/eee/31343C?text=Motherboard"},
+    {"id": 12, "name": "Corsair RM750e", "category": "PSU", "price": 8999, "description": "750 Watt 80 Plus Gold Fully Modular Power Supply.", "image": "https://placehold.co/200x200/eee/31343C?text=PSU"},
+    {"id": 13, "name": "Ant Esports ICE-112G", "category": "PC Case", "price": 3200, "description": "Mid-Tower Gaming Cabinet with RGB fans.", "image": "https://placehold.co/200x200/eee/31343C?text=PC+Case"},
+    {"id": 14, "name": "LG 24 inch IPS Monitor", "category": "Monitor", "price": 9500, "description": "1080p 75Hz IPS Display with FreeSync.", "image": "https://placehold.co/200x200/eee/31343C?text=Monitor"},
+    {"id": 15, "name": "Logitech G102", "category": "Mouse", "price": 1495, "description": "Light Sync RGB Gaming Mouse.", "image": "https://placehold.co/200x200/eee/31343C?text=Mouse"},
+    {"id": 16, "name": "Razer BlackWidow V3", "category": "Keyboard", "price": 8999, "description": "Mechanical Gaming Keyboard with Green Switches.", "image": "https://placehold.co/200x200/eee/31343C?text=Keyboard"},
+    {"id": 17, "name": "HyperX Cloud Core", "category": "Headphones", "price": 4590, "description": "Gaming Headset with 7.1 Surround Sound.", "image": "https://placehold.co/200x200/eee/31343C?text=Headphones"}
+]

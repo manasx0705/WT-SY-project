@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - PC Hardware Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">PC Hardware Store</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button onclick="searchProducts()">Search</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="login.html" id="account-link">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>All Products</h2>
+        <br>
+        
+        <div class="filter-bar">
+            <div>
+                <label for="categoryFilter">Category:</label>
+                <select id="categoryFilter" onchange="filterProducts()">
+                    <option value="All">All</option>
+                    <option value="CPU">CPU</option>
+                    <option value="GPU">GPU</option>
+                    <option value="RAM">RAM</option>
+                    <option value="SSD">SSD</option>
+                    <option value="HDD">HDD</option>
+                    <option value="Motherboard">Motherboard</option>
+                    <option value="PSU">PSU</option>
+                    <option value="PC Case">PC Case</option>
+                    <option value="Monitor">Monitor</option>
+                    <option value="Keyboard">Keyboard</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Headphones">Headphones</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="sortFilter">Sort by:</label>
+                <select id="sortFilter" onchange="filterProducts()">
+                    <option value="default">Default</option>
+                    <option value="priceLow">Price: Low to High</option>
+                    <option value="priceHigh">Price: High to Low</option>
+                    <option value="name">Name: A-Z</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="products-grid" id="products-container">
+            <!-- JavaScript will load products here -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 PC Hardware Store. A college project.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

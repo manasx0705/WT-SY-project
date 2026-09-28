@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders - Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="manage-products.html">Manage Products</a></li>
+            <li><a href="add-product.html">Add Product</a></li>
+            <li><a href="orders.html" style="background-color: #495057; color: white;">Orders</a></li>
+            <li><a href="#" onclick="adminLogout()">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>Customer Orders</h2>
+        </header>
+
+        <div class="admin-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Product Details</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1001</td>
+                        <td>Rahul Sharma</td>
+                        <td>Corsair Vengeance 16GB DDR5 (x2)</td>
+                        <td>₹10,098</td>
+                        <td>
+                            <select>
+                                <option value="Pending">Pending</option>
+                                <option value="Processing">Processing</option>
+                                <option value="Shipped">Shipped</option>
+                                <option value="Delivered" selected>Delivered</option>
+                                <option value="Cancelled">Cancelled</option>
+                            </select>
+                        </td>
+                        <td><button class="btn" onclick="alert('Status updated!')">Update</button></td>
+                    </tr>
+                    <tr>
+                        <td>1002</td>
+                        <td>Student Demo User</td>
+                        <td>AMD Ryzen 5 7600 (x1)</td>
+                        <td>₹19,099</td>
+                        <td>
+                            <select>
+                                <option value="Pending">Pending</option>
+                                <option value="Processing" selected>Processing</option>
+                                <option value="Shipped">Shipped</option>
+                                <option value="Delivered">Delivered</option>
+                                <option value="Cancelled">Cancelled</option>
+                            </select>
+                        </td>
+                        <td><button class="btn" onclick="alert('Status updated!')">Update</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

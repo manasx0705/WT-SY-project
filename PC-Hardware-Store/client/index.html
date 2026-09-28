@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Hardware Store - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">PC Hardware Store</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button onclick="searchProducts()">Search</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="login.html" id="account-link">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <h1>Everything you need to build your PC</h1>
+        <p>Best quality hardware at reasonable student prices.</p>
+        <br>
+        <a href="products.html" class="btn">Shop Now</a>
+    </div>
+
+    <div class="container">
+        <h2>Featured Products</h2>
+        <br>
+        <div class="products-grid" id="featured-products">
+            <!-- JavaScript will load featured products here -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 PC Hardware Store. A college project.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product - Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="manage-products.html">Manage Products</a></li>
+            <li><a href="add-product.html" style="background-color: #495057; color: white;">Add Product</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="#" onclick="adminLogout()">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>Add New Product</h2>
+        </header>
+
+        <div class="admin-container" style="max-width: 600px;">
+            <form id="add-product-form">
+                <div class="form-group">
+                    <label>Product Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea id="description" rows="4" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Price (₹)</label>
+                    <input type="number" id="price" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Category</label>
+                    <select id="category" required>
+                        <option value="CPU">CPU</option>
+                        <option value="GPU">GPU</option>
+                        <option value="Motherboard">Motherboard</option>
+                        <option value="RAM">RAM</option>
+                        <option value="SSD">SSD</option>
+                        <option value="HDD">HDD</option>
+                        <option value="Power Supply">Power Supply</option>
+                        <option value="PC Case">PC Case</option>
+                        <option value="CPU Cooler">CPU Cooler</option>
+                        <option value="Case Fan">Case Fan</option>
+                        <option value="Monitor">Monitor</option>
+                        <option value="Keyboard">Keyboard</option>
+                        <option value="Mouse">Mouse</option>
+                        <option value="Mouse Pad">Mouse Pad</option>
+                        <option value="Headphones">Headphones</option>
+                        <option value="Headset">Headset</option>
+                        <option value="Speakers">Speakers</option>
+                        <option value="Webcam">Webcam</option>
+                        <option value="Microphone">Microphone</option>
+                        <option value="Game Controller">Game Controller</option>
+                        <option value="USB Hub">USB Hub</option>
+                        <option value="USB Cable">USB Cable</option>
+                        <option value="HDMI Cable">HDMI Cable</option>
+                        <option value="DisplayPort Cable">DisplayPort Cable</option>
+                        <option value="Wi-Fi Adapter">Wi-Fi Adapter</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Product Image</label>
+                    <input type="file" id="image" accept="image/*">
+                    <small>Note: Only simulation. Image will be generated based on category.</small>
+                </div>
+                
+                <button type="submit" class="btn">Add Product</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

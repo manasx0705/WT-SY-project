@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li><a href="dashboard.html" style="background-color: #495057; color: white;">Dashboard</a></li>
+            <li><a href="manage-products.html">Manage Products</a></li>
+            <li><a href="add-product.html">Add Product</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="#" onclick="adminLogout()">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>Dashboard Overview</h2>
+            <span>Welcome, Admin</span>
+        </header>
+
+        <div class="dashboard-cards">
+            <div class="card">
+                <h3>Total Products</h3>
+                <p id="total-products">0</p>
+            </div>
+            <div class="card">
+                <h3>Total Orders</h3>
+                <p>8</p>
+            </div>
+            <div class="card">
+                <h3>Total Customers</h3>
+                <p>15</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - PC Hardware Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">PC Hardware Store</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button onclick="searchProducts()">Search</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="account.html" id="account-link">My Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>My Account</h2>
+        <br>
+        <div class="admin-container" id="account-details">
+            <p><strong>Name:</strong> <span id="acc-name">Student Demo User</span></p>
+            <br>
+            <p><strong>Email:</strong> <span id="acc-email">student@gmail.com</span></p>
+            <br>
+            <p><strong>Phone:</strong> 9876543210</p>
+            <br><br>
+            <button class="btn">Edit Profile</button>
+            <a href="orders.html" class="btn" style="background-color: #17a2b8;">View Orders</a>
+            <button class="btn btn-danger" onclick="logout()" style="float: right;">Logout</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 PC Hardware Store. A college project.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
